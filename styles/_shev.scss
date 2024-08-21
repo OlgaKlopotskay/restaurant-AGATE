@@ -1,0 +1,46 @@
+                        .shev {
+                            background-color: $background-color;
+                            margin: 0 auto;
+                            img {
+                                margin-bottom: 30px;
+                                max-width: 398px;
+                            }
+                            &__cook {
+                                font-weight: 300;
+                                margin-bottom: 30px;
+                                color: $subtitle-color;
+                            }
+                            &__information {
+                                max-width: 939px;
+                                margin: 0 auto;
+                                line-height: 41px;
+                            }
+                        }
+                        
+                        @media screen and (max-width: 1020px) {
+                            .shev {
+                                img {
+                                    max-width: 282px;
+                                }
+                                &__information {
+                                    max-width: 691px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                        
+                        @media screen and (max-width: 768px) {
+                            .shev {
+                                img {
+                                    max-width: 251px;
+                                    margin-bottom: 20px;
+                                }
+                                &__cook {
+                                    margin-bottom: 20px;
+                                }
+                                &__information {
+                                    max-width: 626px;
+                                    line-height: 27px;
+                                }
+                            }
+                        }

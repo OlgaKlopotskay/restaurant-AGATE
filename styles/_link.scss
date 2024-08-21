@@ -1,0 +1,50 @@
+.link {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 60px;
+    border-radius: 30px;
+    width: 312px;
+    height: 60px;
+    margin: 60px auto 0px;
+    &:hover {
+        background-color: $button-color;
+        border-color: $button-color;
+        color: $text-color;
+    }
+    &--white {
+        border: 2px solid $text-color;
+        color: $text-color;
+    }
+    &--black {
+        border: 2px solid #000000;
+        color: #000000;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        font-size: 0.68rem;
+        line-height: 48px;
+        width: 248px;
+        height: 48px;
+        &--white {
+            margin: 63px auto 0px;
+        }
+        &--black {
+            margin: 45px auto 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .link {
+        margin: 66px auto 0px;
+        &--white {
+            margin: 66px auto 0px;
+        }
+        &--black {
+            margin: 45px auto 0px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+              .social-networks {
+                  display: flex;
+                  justify-content: center;
+                  margin-top: 60px;
+                  &__link {
+                      color: #262626;
+                      background-color: #FFFFFF;
+                      border-radius: 50%;
+                      line-height: 50px;
+                      text-align: center;
+                      height: 50px;
+                      width: 50px;
+                      font-size: 1rem;
+                      &:not(:last-of-type) {
+                          margin-right: 30px;
+                      }
+                      &:hover {
+                          transform: scale(1.7);
+                      }
+                  }
+              }

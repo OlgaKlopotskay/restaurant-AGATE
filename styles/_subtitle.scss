@@ -1,0 +1,9 @@
+.subtitle {
+    @include subtitle-styles;
+}
+
+@media screen and (max-width: 768px) {
+    .subtitle {
+        @include subtitle-styles768;
+    }
+}

@@ -1,0 +1,16 @@
+.text {
+    font-weight: 300px;
+    @include text-styles;
+}
+
+@media screen and (max-width: 1024px) {
+    .text {
+        @include text-styles1024;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        @include text-styles768;
+    }
+}

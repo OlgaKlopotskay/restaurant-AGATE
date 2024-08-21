@@ -1,0 +1,23 @@
+        .our-advantages {
+            background-color: $background-color;
+            &__information {
+                max-width: 941px;
+                margin: auto;
+            }
+        }
+        
+        @media screen and (max-width: 1024px) {
+            .our-advantages {
+                &__information {
+                    max-width: 602px;
+                }
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .our-advantages {
+                &__information {
+                    max-width: 541px;
+                }
+            }
+        }

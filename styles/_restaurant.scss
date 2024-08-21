@@ -1,0 +1,18 @@
+.restaurant {
+    &__atmosphere {
+        color: $text-color;
+        margin: 35px auto 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .restaurant__atmosphere {
+        margin: 35px auto 63px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant__atmosphere {
+        margin: 35px auto 66px;
+    }
+}

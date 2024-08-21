@@ -1,0 +1,30 @@
+.moodboard {
+    max-width: 1872px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media screen and (max-width: 1440px) {
+    .moodboard {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .moodboard {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .moodboard {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

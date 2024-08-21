@@ -1,0 +1,27 @@
+.title {
+    font-size: 5.3rem;
+    margin: 0 auto;
+    color: $text-color;
+    max-width: 914px;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 3.75rem;
+        max-width: 697px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3.125rem;
+        max-width: 329px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3.125rem;
+        max-width: 329px;
+    }
+}

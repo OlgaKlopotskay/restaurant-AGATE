@@ -1,0 +1,222 @@
+.column {
+    text-align: left;
+    max-width: 360px;
+    position: relative;
+    width: calc((100% - 2*48px)/3);
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 48px;
+    }
+    &::before {
+        content: "";
+        display: flex;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 0.875rem;
+        position: absolute;
+        top: -29px;
+        left: -29px;
+        text-align: center;
+        line-height: 58px;
+    }
+    img {
+        max-width: 360px;
+        width: 100%;
+    }
+    &__caption {
+        font-size: 1.875rem;
+        line-height: 38px;
+        margin: 35px 0px 15px;
+    }
+    &__dish {
+        font-size: 1.125rem;
+        line-height: 23px;
+        font-weight: 300px;
+        color: #474747;
+        margin-bottom: 15px;
+    }
+    &__price {
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 23px;
+    }
+    &--red {
+        &::before {
+            content: "VIP!";
+            background-color: #D33B3B;
+        }
+    }
+    &--green {
+        &::before {
+            content: "NEW!";
+            background-color: #B3E151;
+        }
+    }
+    &--orange {
+        &::before {
+            content: "HIT!";
+            background-color: #E5A434;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .column {
+        max-width: 310px;
+        width: calc((100% - 2*30px)/3);
+        &:not(:last-child) {
+            margin-right: 30px;
+            /*можно last-child вместо :last-of-type? я не понимаю какой тут тип ) {*/
+        }
+        &::before {
+            font-size: 0.75rem;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            top: -20px;
+            left: -20px;
+        }
+    }
+}
+
+
+/*@media screen and (max-width: 1040px) {
+        .column {
+            max-width: 300px;
+        }
+    */
+
+@media screen and (max-width: 1024px) {
+    .column {
+        width: calc((100% - 2*92px)/3);
+        max-width: 253px;
+        &:not(:last-child) {
+            margin-right: 92px;
+        }
+        &::before {
+            font-size: 0.75rem;
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
+            top: -23px;
+            left: -23px;
+        }
+        &__caption {
+            font-size: 1.5625rem;
+            line-height: 31px;
+            margin: 15px 0px;
+        }
+        &__dish {
+            font-size: 0.93rem;
+            line-height: 19px;
+            margin-bottom: 15px;
+        }
+        &__price {
+            font-size: 0.9375rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        max-width: 220px;
+        width: calc((100% - 2*42px)/3);
+        &:not(:last-of-type) {
+            margin-right: 42px;
+        }
+        &__dish {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        max-width: 200px;
+        width: calc((100% - 2*32px)/3);
+        &:not(:last-of-type) {
+            margin-right: 32px;
+        }
+        &__dish {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        display: flex;
+        max-width: 692px;
+        width: 100%;
+        &::before {
+            font-size: 0.875rem;
+            width: 56px;
+            height: 56px;
+            line-height: 56px;
+            top: -28px;
+            left: -28px;
+        }
+        &:not(:last-child) {
+            margin: 0 auto 58px;
+        }
+        &::before {
+            width: 56px;
+            height: 56px;
+            font-size: 0.875rem;
+            line-height: 56px;
+            top: -28px;
+            left: -28px;
+        }
+        img {
+            max-width: 320px;
+        }
+        &__caption {
+            text-align: left;
+            max-width: 348px;
+            padding-top: 17px;
+            margin-bottom: 20px;
+        }
+        &__dish {
+            font-size: 1.25rem;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+        &__price {
+            font-size: 1.25rem;
+            line-height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .column {
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &:not(:last-of-type) {
+            margin-bottom: 48px;
+        }
+        &__foto-dish {
+            max-width: 300px;
+        }
+        &__description {
+            max-width: 300px;
+            padding: 0;
+            margin: 15px 0 0;
+            &__caption {
+                font-size: 1.25rem;
+            }
+            &__dish {
+                margin: 15px 0;
+                font-size: 1.125rem;
+            }
+            &__price {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

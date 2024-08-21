@@ -1,0 +1,22 @@
+@mixin subtitle-styles {
+    font-size: 1.5625rem;
+    line-height: 32px;
+}
+
+@mixin subtitle-styles768 {
+    font-size: 1.375rem;
+    line-height: 28px;
+}
+
+@mixin text-styles {
+    font-size: 1.875rem;
+    line-height: 32px;
+}
+
+@mixin text-styles1024 {
+    font-size: 1.375rem;
+}
+
+@mixin text-styles768 {
+    font-size: 1.25rem;
+}
